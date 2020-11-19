@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile | Fcbah</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Game</h1>
+        </header>
+        <nav >
+            <ul class="site-nav">
+                <li class="nav-right"><span>GAME SCREEN</span></li>
+                <li><button onclick="restart()">Restart Game</button></li>
+                
+            </ul>
+        </nav>
+        <main class="flex">
+            <div class="score-board">
+                <h2>Score Board</h2>
+                <div class="answered">
+                    <label>Answered</label>
+                    <div class="value">
+                        <span class="first">3</span>
+                        <!-- <span class="middle"></span> -->
+                        <span class="last">5</span>
+                    </div>                    
+                </div>
+                <div class="score">
+                    <label>Score</label>
+                    <div class="value">
+                        <span class="first">3</span>
+                        <!-- <span class="middle"> </span> -->
+                        <span class="last">5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question-bar">
+                <h2>Question <span>1</span></h1>
+                <div class="question">                    
+                    <p>This is the question oh. Can you read it. It can be long</p>
+                
+                    <div class="options">
+                        <div onclick="optionClicked('A')" class="A option">
+                            <label>A.</label>
+                            <span>Option A</span>
+                        </div>
+                        <div onclick="optionClicked('B')" class="B option">
+                            <label>B.</label>
+                            <span>Option B</span>
+                        </div>
+                        <div onclick="optionClicked('C')" class="C option">
+                            <label>C.</label>
+                            <span>Option C</span>
+                        </div>            
+                    </div>
+                </div>
+                <button onclick="onNextQuestion()">Next Question &gt;&gt;&gt;</button>
+            </div>
+        </main>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
